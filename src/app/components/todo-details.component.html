@@ -1,0 +1,11 @@
+<h1>Id {{ todoId }}</h1>
+<div>
+    <app-todo [todo]="myTodo" #mytodo></app-todo>
+</div>
+
+<hr>
+
+
+<button type="button" (click)="updateTodo()">Update</button>
+<button type="button" (click)="deleteTodo()">Delete</button>
+<button type="button" [routerLink]="['/']">Back</button>

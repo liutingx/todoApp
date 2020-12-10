@@ -1,0 +1,10 @@
+<div>
+    <button type="button" [routerLink]="['/form']">Create</button>
+</div>
+<hr>
+<div *ngFor="let each of todos">
+    <h4 [routerLink]="['/todo', each.id]">
+        {{each.title}}
+    </h4>    
+</div>
+
